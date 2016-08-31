@@ -1,0 +1,21 @@
+$title: Validator
+$slug: validator
+$view: /views/components/validator.html
+$date: "2013-02-28"
+$hidden: false
+
+description: "A simple, powerful, and extensible client-side validation object."
+author: "Wes Hatch"
+featured: false
+tags:
+  - js
+  - validation
+
+stash: "https://stash.hugeinc.com/projects/CMPTS/repos/validator/browse"
+npm: "https://www.npmjs.com/package/@hugeinc/validator"
+github: "https://github.com/hugeinc/component-validator"
+assets:
+  css:
+    - "https://rawgit.com/apathetic/validator/master/demo/styles.css"
+  js:
+    - "https://rawgit.com/apathetic/validator/master/dist/validator.js"

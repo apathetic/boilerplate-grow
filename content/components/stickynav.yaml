@@ -1,0 +1,22 @@
+$title: "Sticky Nav"
+$slug: stickynav
+$view: /views/components/stickynav.html
+$date: "2014-04-26"
+$hidden: false
+
+description: "A navigation bar (or menu) that efficiently attaches / detaches to the top of the viewport upon scrolling."
+author: "Wes Hatch"
+featured: true
+tags:
+  - navigation
+  - js
+  - scroll
+
+stash: "https://stash.hugeinc.com/projects/CMPTS/repos/stickynav/browse"
+npm: "https://www.npmjs.com/package/@hugeinc/stickynav"
+github: "https://github.com/apathetic/stickynav"
+assets:
+  css:
+    - "https://rawgit.com/apathetic/stickynav/master/demo/styles.css"
+  js:
+    - "https://rawgit.com/apathetic/stickynav/master/dist/stickynav.js"

@@ -1,0 +1,21 @@
+header {
+  // text-align: center;
+  color: $color-font-light;
+  background: colors('grey-dark');
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav {
+    position: static;
+
+    button {
+      font-family: 'Lucida Grande';
+      background: #393c3c;
+      color: #000;
+      font-size: 2em;
+    }
+  }
+}

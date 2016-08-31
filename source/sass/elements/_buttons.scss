@@ -1,0 +1,53 @@
+/* ---------------------------------------
+  2.  Buttons
+---------------------------------------- */
+
+button {
+  outline: 0;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+%brick {
+  border-radius: 3px;
+  display: inline-block;
+  // width: 100%;
+  font-size: 1rem;
+  padding: 1em; // 1.2em;
+}
+
+.button {
+  @extend %brick;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin: 0.5em 0;
+  max-width: 18em;
+  min-width: 10em;
+  vertical-align: top;
+  transition: background 0.2s ease-in-out;
+
+  &--default {
+    background-color: colors('blue');
+
+    &:hover {
+      background-color: colors('blue-light');
+    }
+  }
+
+  &--small {
+    font-size: 0.8em;
+  }
+
+  &--outline {
+    border: 1px solid #fff;
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #000;
+    }
+  }
+}

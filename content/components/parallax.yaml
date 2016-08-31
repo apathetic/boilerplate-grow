@@ -1,0 +1,19 @@
+$title: Parallax
+$slug: parallax
+$view: /views/components/parallax.html
+$date: "2014-05-02"
+$hidden: false
+
+description: "A simple, robust, and powerful parallax-ing framework."
+author: "Wes Hatch"
+featured: false
+tags:
+  - js
+  - parallax
+stash: "https://stash.hugeinc.com/projects/CMPTS/repos/parallax/browse"
+github: "https://github.com/apathetic/parallax"
+assets:
+  css:
+    - "https://rawgit.com/apathetic/parallax/master/demo/styles.css"
+  js:
+    - "https://rawgit.com/apathetic/parallax/master/dist/parallax.js"

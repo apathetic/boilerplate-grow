@@ -1,0 +1,16 @@
+
+
+// --- Links ---
+
+a {
+  text-decoration: none;
+  color: #ec008c;
+
+  // &:visited {
+  //   color: #ec008c;
+  // }
+
+  &:hover {
+    color: colors('magenta');
+  }
+}

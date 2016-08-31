@@ -1,0 +1,101 @@
+/**
+
+File:         elements.scss
+Description:  All general elements styles (ie. tags without classes) can go in here
+
+    ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. Headings
+    2. Text style
+    3. Paragraphs
+
+*/
+
+/* ---------------------------------------
+  1.  Headings
+---------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-family: $font-default;
+  letter-spacing: -0.06em;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1,
+.heading-1 {
+  font-size: em(60px);
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h6 {
+  line-height: 1;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-family: $font-serif;
+}
+
+
+@include at-breakpoint('small') {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+
+/* ---------------------------------------
+  2.  Text Style
+---------------------------------------- */
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+sup {
+  font-size: 0.5em;
+  vertical-align: super;
+}
+
+pre {
+  border: 1px solid #ddd;
+  margin-bottom: 2em;
+}
+
+hr {
+  margin: 4em 0;
+  border: 1px solid colors('border');
+}
+
+/* ---------------------------------------
+  3.  Paragraphs
+---------------------------------------- */
+
+p {
+  margin-bottom: 1em;
+}

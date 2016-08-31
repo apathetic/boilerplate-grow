@@ -1,0 +1,20 @@
+$title: Scrollify
+$slug: scrollify
+$view: /views/components/scrollify.html
+$date: "2016-04-15"
+$hidden: false
+
+description: "A simple Class to \"do things on scroll.\""
+author: "Wes Hatch"
+featured: true
+tags:
+  - js
+  - parallax
+  - scroll
+npm: "https://www.npmjs.com/package/@hugeinc/scrollify"
+github: "https://github.com/apathetic/scrollify"
+assets:
+  css:
+    - "https://rawgit.com/apathetic/scrollify/master/demo/styles.css"
+  js:
+    - "https://rawgit.com/apathetic/scrollify/master/dist/scrollify.js"

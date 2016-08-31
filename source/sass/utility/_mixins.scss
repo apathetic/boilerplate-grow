@@ -1,0 +1,86 @@
+/**
+
+File:         mixins.scss
+Description:  Helpful SASS mixins
+
+    ◡◠ ✥ ◠◡
+
+  Table of Contents:
+
+  1. Breakpoints
+  2. Clearfix
+  3. Font helpers
+
+*/
+
+
+/* ---------------------------------------
+  1.  Breakpoints
+---------------------------------------- */
+
+/**
+ * Mobile-first breakpoint mixin. This is the preferred way to use a
+ * breakpoint, with larger devices inheriting from smaller ones.
+ * @param  {mixed} $bp  You can pass in "small", "medium", or "large".
+ *                      Or, a direct pixel value works too (eg. "800px")
+ */
+@mixin from-breakpoint($bp) {
+  @if ($bp == 'small') {
+    @content;
+  } @else { /* stylelint-disable-line */
+    @if map-has-key($breakpoints, $bp) {
+      $list: map-get($breakpoints, $bp);
+      $bp: nth($list, 1);
+    }
+
+    @media screen and (min-width: #{$bp}) {
+      @content;
+    }
+  }
+}
+
+// Target a specific breakpoint
+@mixin at-breakpoint($bp) {
+  $list: map-get($breakpoints, $bp);
+  $min: nth($list, 1);
+  $max: nth($list, length($list));
+
+  @if ($min == null) {
+    @media screen and (max-width: #{$max}) {
+      @content;
+    }
+  } @else if ($max == null) { /* stylelint-disable-line */
+    @media screen and (min-width: #{$min}) {
+      @content;
+    }
+  } @else { /* stylelint-disable-line */
+    @media screen and (min-width: #{$min}) and (max-width: #{$max}) {
+      @content;
+    }
+  }
+}
+
+/* ---------------------------------------
+  2.  Clearfix
+---------------------------------------- */
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+
+/* ---------------------------------------
+  3.  Font helpers
+---------------------------------------- */
+
+@function em($size, $base:$font-size-base) {
+  @return ($size / $base) * 1em;
+}
+
+@function rem($size) {
+  @return ($size / $font0size-base) * 1rem;
+}

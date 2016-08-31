@@ -1,0 +1,16 @@
+$title: Asciify
+$slug: asciify
+$view: /views/components/asciify.html
+$date: "2016-07-28"
+$hidden: true
+
+description: "Turn all images and video on your site into ASCII art."
+author: "Wes Hatch"
+featured: false
+tags:
+  - text
+  - ascii
+github: "https://github.com/apathetic/asciify"
+assets:
+  js:
+    - "https://rawgit.com/apathetic/asciify/master/dist/asciify.js"

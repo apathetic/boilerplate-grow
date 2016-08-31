@@ -1,0 +1,134 @@
+/**
+
+File:     index.css
+Description:  Styles for Landing Page
+
+
+    ◡◠ ✥ ◠◡
+
+  Table of Contents:
+
+  2. Default styles
+    - typograpy
+    - links
+  3. Layout
+
+*/
+
+
+/* ---------------------------------------
+  2.  Default Styles
+---------------------------------------- */
+
+header.hero {
+  color: $color-font-light;
+}
+
+.tile {
+  color: $color-font-light;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  max-height: 250px;
+  transition: transform 0.8s, max-height 1s, opacity 0.5s;
+  opacity: 1;
+  transform-origin: top;
+
+  &:hover {
+    animation: blip 2s;
+  }
+
+  &.collapsed {
+    max-height: 0;
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+
+  > div {
+    padding: 2em 20%;
+  }
+
+  h2 {
+    margin-bottom: 0.2em;
+
+    a {
+      color: #000;
+      position: static;
+    }
+  }
+
+  .eyebrow {
+    font: 12px Arial, sans-serif;
+    display: inline-block;
+    padding: 1em;
+    color: $color-font-dark;
+
+    strong {
+      padding-right: 0.5em;
+
+      &::after {
+        content: '/';
+        padding-left: 0.5em;
+      }
+
+      &:last-child::after {
+        content: '';
+      }
+
+    }
+  }
+
+  .install {
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+
+    a {
+      margin: 0.5em;
+
+      &::before {
+        margin-right: 0.2em;
+      }
+    }
+  }
+
+}
+
+.filters {
+  padding: 2em;
+
+  li {
+    width: 90px;
+    height: 36px;
+    font: 11px / 32px $font-sans;
+    font-weight: bold;
+    background: #fff;
+    cursor: pointer;
+    display: inline-block;
+    // border: 2px solid $color-border;
+    margin: 6px;
+    transition: all 0.5s;
+
+    &::after {
+      content: '';
+      border: 8px solid transparent;
+      border-top-color: #fff;
+      position: absolute;
+      right: 36px;
+      bottom: 0;
+      transition: all 0.5s;
+      z-index: -1;
+    }
+  }
+
+  .active {
+    color: #fff;
+    background: colors('grey-dark');
+    border-color: colors('grey-dark');
+
+    &::after {
+      border-top-color: colors('grey-dark');
+      bottom: -16px;
+    }
+  }
+
+}

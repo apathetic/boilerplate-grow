@@ -1,0 +1,34 @@
+<html lang="{{doc.locale}}">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, height=device-height">
+    <title>{% if doc.title %}{{doc.title}} – {% endif %}{{podspec.title}}</title>
+    {% if podspec.meta.image %}
+    <meta property="og:image" content="{{ g.static(podspec.meta.image).url }}">
+    {% endif %}
+    <meta property="og:title" content="{% if doc.title %}{{ doc.title }} – {% endif %}{{ podspec.title }}">
+    <meta property="og:site_name" content="{{ podspec.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ doc.url }}">
+    {% if doc.description %}
+    <meta name="description" content="{{ doc.description }}">
+    <meta property="og:description" content="{{ doc.description }}">
+    {% endif %}
+    {% if podspec.meta.favicon_path %}
+    <link rel="shortcut icon" href="{{ g.static(podspec.meta.favicon_path).url.path }}">
+    {% endif %}
+    <link rel="stylesheet" href="{{ g.static('/dist/css/main.min.css').url }}">
+
+    {% block assets %}<!-- -->{% endblock %}
+  </head>
+  <body>
+
+    {% block main %}
+      {{ doc.html|safe }}
+    {% endblock %}
+
+    {% include "/views/partials/footer.html" %}
+
+  </body>
+</html>
