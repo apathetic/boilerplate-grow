@@ -1,0 +1,19 @@
+{
+  "name": "project_fi",
+  "version": "1.0.0",
+  "description": "Project Fi - Holiday Gifts.",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "google-closure-compiler": "^20160713.3.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-closure-compiler": "^0.4.0",
+    "gulp-gjslint": "^0.1.5",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylelint": "^3.1.0"
+  }
+}
