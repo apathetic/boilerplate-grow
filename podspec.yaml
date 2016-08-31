@@ -5,24 +5,21 @@ root: ""
 localization:
   default_locale: en
 
+title: "Your Site"
 meta:
-  google_analytics_id: ""
   image_path: /source/images/social_image.jpg
   favicon_path: /source/images/favicon.png
 
 static_dirs:
 - static_dir: /dist/
   serve_at: "/assets/"
-  fingerprinted: true
+  fingerprinted: false
 - static_dir: /source/images/
   serve_at: "/assets/images/"
-  fingerprinted: true
-- static_dir: /source/video/
-  serve_at: "/assets/video/"
-  fingerprinted: true
+  fingerprinted: false
 - static_dir: /source/fonts/
   serve_at: "/assets/fonts/"
-  fingerprinted: true
+  fingerprinted: false
 
 sitemap:
   enabled: true
@@ -32,12 +29,12 @@ preprocessors:
   build_task: "build"
   run_task: "default"
 
+
+
 deployments:
-  test:
-    destination: local
-    out_dir: ./deploy
-  webreview:
-    destination: webreview
-    server: googwebreview.appspot.com
-    project: hw/projectfi
-    subdomain: projectfi
+  test:                   # Deployment name.
+    destination: local    # Destination kind.
+    out_dir: ./build
+    env:
+      host: your_url_env
+      scheme: https

@@ -1,0 +1,23 @@
+$title: Carousel
+$slug: carousel
+$view: /views/components/carousel.html
+$date: "2014-03-05"
+$hidden: false
+
+description: "A touch-friendly, lightwieght carousel. Uses CSS3 transforms for its transitions."
+author: "Wes Hatch"
+featured: true
+tags:
+  - carousel
+  - ie9
+  - mobile
+  - js
+  - widget
+npm: "https://www.npmjs.com/package/@hugeinc/carousel"
+github: "https://github.com/hugeinc/component-carousel"
+assets:
+  css:
+    - "https://rawgit.com/hugeinc/component-carousel/master/demo/styles.css"
+    - "https://rawgit.com/hugeinc/component-carousel/master/src/carousel.css"
+  js:
+    - "https://rawgit.com/hugeinc/component-carousel/master/dist/carousel.js"

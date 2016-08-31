@@ -1,0 +1,42 @@
+/**
+
+File:           fonts.scss
+Description:    Site fonts are included here
+
+        ◡◠ ✥ ◠◡
+
+    Table of Contents:
+
+    1. HUGE
+    2. Galaxie
+    3. Icons
+
+*/
+
+$url: "/showcase/assets/fonts";
+
+@font-face{
+  font-family:'HUGE';
+  src: url("#{$url}/huge_agb_v5-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Galaxie';
+  src: url("#{$url}/GalaxieCopernicus-Book.woff") format("woff")
+}
+
+@font-face {
+  font-family: "Galaxie";
+  font-style: italic;
+  src: url("#{$url}/GalaxieCopernicus-BookItalic.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'icons';
+  src:url('#{$url}/icons.eot') format('embedded-opentype'),
+      url('#{$url}/icons.ttf') format('truetype'),
+      url('#{$url}/icons.woff') format('woff'),
+      url('#{$url}/icons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

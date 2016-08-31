@@ -1,0 +1,124 @@
+/*
+ * flexicarousel
+ * https://github.com/apathetic/flexicarousel-2
+ *
+ * Copyright (c) 2014 Wes Hatch
+ * Licensed under the MIT license.
+ */
+
+/* -------------------------------------
+  CAROUSEL STYLES
+------------------------------------- */
+
+/*
+.carousel {
+  img {
+    pointer-events: none;
+  }
+
+  .animate {
+    transition: all 0.4s ease !important;
+  }
+
+  .wrap {
+    white-space: nowrap;    // fallback
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    user-select: none;
+
+    > li {
+      display: inline-block; // fallback
+      vertical-align: top;   // fallback
+      position: relative;    // fallback
+      width: 100%;           // fallback
+
+      cursor: move;
+      flex: 1 0 100%;
+    }
+  }
+}
+*/
+
+
+.carousel {
+  overflow: hidden;
+  cursor: move;
+  text-align: center;
+
+  .animate {
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__wrap {
+    display: flex;
+    min-height: 240px;
+    align-items: center;
+  }
+
+  &__slide {
+    flex: 1 0 100%;
+    padding: 0 20vw;
+  }
+
+  // TODO: move to flexicarousel css:
+  &__nav {
+    button {
+      background: none;
+      color: #fff;
+      font-size: 4em;
+    }
+  }
+
+  &:hover nav button { opacity: 1; }
+
+  nav {
+    text-align: center;
+    position: static;
+
+    ul {
+      padding: 1em;
+    }
+
+    li {
+      cursor: pointer;
+      display: inline-block;
+      background-color: #bbb;
+      border: 2px solid transparent;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      margin: 0 3px;
+      background-clip: content-box;
+      transition: all 0.5s;
+
+      &.active {
+        border-color: colors('magenta');
+        background-color: transparent;
+      }
+    }
+
+    button {
+      position: absolute;
+      cursor: pointer;
+      top: 50%;
+      height: 4em;
+      margin-top: -2em;
+      padding: 0.5em;
+      opacity: 0;
+      transition: all 0.3s;
+
+      &.disabled {
+        opacity: 0.2;
+      }
+    }
+
+    .prev {
+      left: 0;
+    }
+
+    .next {
+      right: 0;
+    }
+  }
+}

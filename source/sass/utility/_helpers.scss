@@ -1,0 +1,18 @@
+
+.align-center {
+  text-align: center;
+}
+
+.sticky {
+  @include at-breakpoint('small') {
+    &::after {
+      @include clearfix;
+    }
+  }
+
+  @include at-breakpoint('large') {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}

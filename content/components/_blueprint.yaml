@@ -1,0 +1,2 @@
+#view: /views/component.html
+path: /components/{slug}/

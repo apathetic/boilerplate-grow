@@ -1,0 +1,78 @@
+{% extends "/views/base.html" %}
+
+{% block assets %}
+  {% for style in doc.assets.css %}
+    <link rel="stylesheet" href="{{ style }}">
+  {% endfor %}
+
+  {% for script in doc.assets.js %}
+    <script src="{{ script }}"></script>
+  {% endfor %}
+{% endblock %}
+
+{% block main %}
+  {% set next_doc = doc.next() %}
+  {% set prev_doc = doc.prev() %}
+
+  <header class="condensed align-center">
+    <h1>{{ doc.title }}.</h1>
+    <!-- <p class="attribution">{{ _('Posted %(date)s', date=doc.published ) }}</p> -->
+
+    <nav>
+    {% if prev_doc %}
+      <a class="button prev" href="{{ prev_doc.url }}">
+        ⟨
+        <span>{{ prev_doc.title }}</span>
+      </a>
+    {% endif %}
+    {% if next_doc %}
+      <a class="next button" href="{{ next_doc.url }}">
+        <span>{{ next_doc.title }}</span>
+        ⟩
+      </a>
+    {% endif %}
+    </nav>
+
+    {% if doc.npm %}
+    <a class="button button--outline button--small" href="{{ doc.npm }}">
+      npm
+    </a>
+    {% endif %}
+    {% if doc.github %}
+    <a class="button button--outline button--small" href="{{ doc.github }}">
+      <i class="icon-github"></i> Github
+    </a>
+    <a class="button button--outline button--small" href="{{ doc.github }}/archive/master.zip">
+      ⇩ Download
+    </a>
+    {% endif %}
+
+  </header>
+
+  <nav>
+    <div id="sticky">
+      <div class="container">
+        <nav data-autogenerate="true">
+          <ul></ul>
+        </nav>
+      </div>
+    </div>
+  </nav>
+
+  <main class="component left-rail">
+    {% block component %}<!-- -->{% endblock %}
+  </main>
+
+  <!--
+  {% for style in doc.assets.css %}
+    <link rel="stylesheet" href="{{ style }}">
+  {% endfor %}
+
+  {% for script in doc.assets.js %}
+    <script src="{{ script }}"></script>
+  {% endfor %}
+  -->
+
+  <script src="{{ g.static('/dist/js/component.js').url }}"></script>
+
+{% endblock %}

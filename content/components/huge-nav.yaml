@@ -1,0 +1,18 @@
+$title: "Huge Inc. Nav"
+$slug: huge-nav
+$view: /views/components/huge-nav.html
+$date: "2014-05-05"
+$hidden: true
+
+description: "The full-screen nav that is featured on Huge Inc."
+author: "Wes Hatch"
+featured: false
+tags:
+  - js
+  - nav
+github: "https://github.com/hugeinc/huge-nav"
+assets:
+  css:
+    - "https://rawgit.com/hugeinc/huge-nav/master/demo/styles.css"
+  js:
+    - "https://rawgit.com/hugeinc/huge-nav/master/dist/huge-nav.min.js"

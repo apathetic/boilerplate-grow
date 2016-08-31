@@ -1,7 +1,7 @@
 {
-  "name": "project_fi",
+  "name": "your_site",
   "version": "1.0.0",
-  "description": "Project Fi - Holiday Gifts.",
+  "description": "Your site description.",
   "devDependencies": {
     "del": "^2.2.2",
     "google-closure-compiler": "^20160713.3.0",

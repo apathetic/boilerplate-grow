@@ -1,0 +1,24 @@
+/* ---------------------------------------
+  3.  Layout
+---------------------------------------- */
+
+.container {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding: 0 5%;
+
+  @include from-breakpoint($max-width) {
+    padding: 0 $max-width * 0.05;
+  }
+}
+
+
+/* ---------------------------------------
+  2. Sections
+---------------------------------------- */
+
+section {
+  overflow: hidden;
+
+  @include clearfix;
+}
