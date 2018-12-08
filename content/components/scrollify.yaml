@@ -15,6 +15,6 @@ npm: "https://www.npmjs.com/package/@hugeinc/scrollify"
 github: "https://github.com/apathetic/scrollify"
 assets:
   css:
-    - "https://rawgit.com/apathetic/scrollify/master/demo/styles.css"
+    - "https://cdn.jsdelivr.net/gh/apathetic/scrollify/demo/styles.css"
   js:
-    - "https://rawgit.com/apathetic/scrollify/master/dist/scrollify.js"
+    - "https://cdn.jsdelivr.net/gh/apathetic/scrollify/dist/scrollify.js"
