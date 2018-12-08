@@ -17,7 +17,7 @@ npm: "https://www.npmjs.com/package/@hugeinc/carousel"
 github: "https://github.com/hugeinc/component-carousel"
 assets:
   css:
-    - "https://rawgit.com/hugeinc/component-carousel/master/demo/styles.css"
-    - "https://rawgit.com/hugeinc/component-carousel/master/src/carousel.css"
+    - "https://cdn.jsdelivr.net/gh/hugeinc/component-carousel/demo/styles.css"
+    - "https://cdn.jsdelivr.net/gh/hugeinc/component-carousel/src/carousel.css"
   js:
-    - "https://rawgit.com/hugeinc/component-carousel/master/dist/carousel.js"
+    - "https://cdn.jsdelivr.net/gh/hugeinc/component-carousel/dist/carousel.js"

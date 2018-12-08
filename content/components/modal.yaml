@@ -16,6 +16,6 @@ npm: "https://www.npmjs.com/package/@hugeinc/modal"
 github: "https://github.com/apathetic/modals"
 assets:
   css:
-    - "https://rawgit.com/apathetic/modals/master/demo/styles.css"
+    - "https://cdn.jsdelivr.net/gh/apathetic/modals/demo/styles.css"
   js:
-    - "https://rawgit.com/apathetic/modals/master/dist/modal.js"
+    - "https://cdn.jsdelivr.net/gh/apathetic/modals/dist/modal.js"

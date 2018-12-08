@@ -16,6 +16,6 @@ npm: "https://www.npmjs.com/package/@hugeinc/validator"
 github: "https://github.com/hugeinc/component-validator"
 assets:
   css:
-    - "https://rawgit.com/apathetic/validator/master/demo/styles.css"
+    - "https://cdn.jsdelivr.net/gh/apathetic/validator/demo/styles.css"
   js:
-    - "https://rawgit.com/apathetic/validator/master/dist/validator.js"
+    - "https://cdn.jsdelivr.net/gh/apathetic/validator/dist/validator.js"

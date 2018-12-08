@@ -17,6 +17,6 @@ npm: "https://www.npmjs.com/package/@hugeinc/stickynav"
 github: "https://github.com/apathetic/stickynav"
 assets:
   css:
-    - "https://rawgit.com/apathetic/stickynav/master/demo/styles.css"
+    - "https://cdn.jsdelivr.net/gh/apathetic/stickynav/demo/styles.css"
   js:
-    - "https://rawgit.com/apathetic/stickynav/master/dist/stickynav.js"
+    - "https://cdn.jsdelivr.net/gh/apathetic/stickynav/dist/stickynav.js"

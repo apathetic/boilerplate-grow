@@ -13,4 +13,4 @@ tags:
 github: "https://github.com/apathetic/asciify"
 assets:
   js:
-    - "https://rawgit.com/apathetic/asciify/master/dist/asciify.js"
+    - "https://cdn.jsdelivr.net/gh/apathetic/asciify/dist/asciify.js"

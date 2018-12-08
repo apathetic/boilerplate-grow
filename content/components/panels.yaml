@@ -13,7 +13,7 @@ tags:
 github: "https://github.com/apathetic/panels"
 assets:
   css:
-    - "https://rawgit.com/apathetic/navigator/master/src/panels.css"
-    - "https://rawgit.com/apathetic/navigator/master/demo/styles.css"
+    - "https://cdn.jsdelivr.net/gh/apathetic/navigator/src/panels.css"
+    - "https://cdn.jsdelivr.net/gh/apathetic/navigator/demo/styles.css"
   js:
-    - "https://rawgit.com/apathetic/navigator/master/dist/panels.js"
+    - "https://cdn.jsdelivr.net/gh/apathetic/navigator/dist/panels.js"
